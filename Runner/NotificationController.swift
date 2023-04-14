@@ -9,6 +9,7 @@ import UIKit
 
 class NotificationController: UIViewController {
 
+    @IBOutlet weak var datePiker: UIDatePicker!
     @IBOutlet weak var datapiker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,10 @@ class NotificationController: UIViewController {
         UNUserNotificationCenter.current().requestAuthorization( options: [.alert, .sound, .badge]) { granted , error in
             if granted {
                 print("granted")
-                self.scheduleNotification()
+                DispatchQueue.main.async {
+                    self.scheduleNotification()
+
+                }
             
             } else {
                 print("denied")
@@ -34,14 +38,22 @@ class NotificationController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = "Hello"
         content.subtitle = "Let's Run"
-        content.body = "My notification"
+        content.body = "Remember Me"
         content.badge = 1
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
+        let date =  datePiker.date
+        let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents( [.year, .month, .day, .hour, .minute, .second], from: date), repeats: false)
         let request = UNNotificationRequest(identifier: "textNotification", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request)
     }
     
     
-
+    @IBAction func btnRemoveRemember(_ sender: Any) {
+        //UNUserNotificationCenter.current()
+            //.removeAllPendingNotificationRequests()
+        UNUserNotificationCenter.current()
+            .removePendingNotificationRequests(withIdentifiers: ["textNotification"])
+    }
+    
 }

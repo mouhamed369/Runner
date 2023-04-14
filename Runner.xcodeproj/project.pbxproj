@@ -19,6 +19,13 @@
 		D27E036929C3BEFD0000C2BB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E036829C3BEFD0000C2BB /* MapViewController.swift */; };
 		D2C3BC9C29DDC84800D1CD76 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C3BC9B29DDC84800D1CD76 /* SettingsController.swift */; };
 		D2C3BC9E29DDD60800D1CD76 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C3BC9D29DDD60800D1CD76 /* NotificationController.swift */; };
+		D9413E6C29E8C78C00E13C4F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E6929E8C78C00E13C4F /* DataController.swift */; };
+		D9413E7229E8C79900E13C4F /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E6F29E8C79900E13C4F /* AddFoodView.swift */; };
+		D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E7029E8C79900E13C4F /* EditFoodView.swift */; };
+		D9413E7429E8C79900E13C4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E7129E8C79900E13C4F /* ContentView.swift */; };
+		D9413E7729E8C7A000E13C4F /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E7629E8C7A000E13C4F /* TimeFormatting.swift */; };
+		D9413E9429E8C84300E13C4F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E9329E8C84300E13C4F /* HomeController.swift */; };
+		D9413E9629E8D48000E13C4F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E9529E8D48000E13C4F /* Utils.swift */; };
 		D96447C429DE30BC00847733 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447B829DE30BC00847733 /* Consts.swift */; };
 		D96447C529DE30BC00847733 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447B929DE30BC00847733 /* Enums.swift */; };
 		D96447C629DE30BC00847733 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447BA29DE30BC00847733 /* Helpers.swift */; };
@@ -33,6 +40,14 @@
 		D96447D529DE30DC00847733 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447D029DE30DC00847733 /* LoginModels.swift */; };
 		D96447D629DE30DC00847733 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447D129DE30DC00847733 /* GenericResponse.swift */; };
 		D96447D829DE61E700847733 /* profileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447D729DE61E700847733 /* profileController.swift */; };
+		D9A5079C29DFC70F007D4D71 /* forgetPasswordReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */; };
+		D9A5079E29DFC7B9007D4D71 /* GenCodeReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */; };
+		D9A507A029DFD4D3007D4D71 /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */; };
+		D9A507A429DFD775007D4D71 /* GenCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A329DFD775007D4D71 /* GenCodeViewModel.swift */; };
+		D9A507A629DFD7D0007D4D71 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A529DFD7D0007D4D71 /* CodeView.swift */; };
+		D9A507A829DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */; };
+		D9A507AA29DFD9E1007D4D71 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */; };
+		D9A507AC29DFEF48007D4D71 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507AB29DFEF48007D4D71 /* ForgetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +67,13 @@
 		D27E036829C3BEFD0000C2BB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D2C3BC9B29DDC84800D1CD76 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		D2C3BC9D29DDD60800D1CD76 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D9413E6929E8C78C00E13C4F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		D9413E6F29E8C79900E13C4F /* AddFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		D9413E7029E8C79900E13C4F /* EditFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
+		D9413E7129E8C79900E13C4F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9413E7629E8C7A000E13C4F /* TimeFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		D9413E9329E8C84300E13C4F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D9413E9529E8D48000E13C4F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D96447B829DE30BC00847733 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		D96447B929DE30BC00847733 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		D96447BA29DE30BC00847733 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -66,6 +88,14 @@
 		D96447D029DE30DC00847733 /* LoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		D96447D129DE30DC00847733 /* GenericResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		D96447D729DE61E700847733 /* profileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileController.swift; sourceTree = "<group>"; };
+		D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPasswordReq.swift; sourceTree = "<group>"; };
+		D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenCodeReq.swift; sourceTree = "<group>"; };
+		D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		D9A507A329DFD775007D4D71 /* GenCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenCodeViewModel.swift; sourceTree = "<group>"; };
+		D9A507A529DFD7D0007D4D71 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsecurChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		D9A507AB29DFEF48007D4D71 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,16 +139,23 @@
 		59AD496929C1F562000A6C3C /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				D9413E7529E8C7A000E13C4F /* Helpers */,
+				D9413E6E29E8C79900E13C4F /* Views */,
+				D9413E6829E8C78C00E13C4F /* DataModel */,
 				D96447CC29DE30DC00847733 /* Models */,
 				D96447BB29DE30BC00847733 /* Network */,
-				D96447B729DE30BC00847733 /* utils */,
 				D96447C129DE30BC00847733 /* ViewModels */,
+				D96447B729DE30BC00847733 /* utils */,
 				59AD496A29C1F562000A6C3C /* AppDelegate.swift */,
+				D9413E9329E8C84300E13C4F /* HomeController.swift */,
 				59AD496C29C1F562000A6C3C /* SceneDelegate.swift */,
+				D9A507A529DFD7D0007D4D71 /* CodeView.swift */,
+				D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */,
 				59AD496E29C1F562000A6C3C /* ViewController.swift */,
 				D27E036829C3BEFD0000C2BB /* MapViewController.swift */,
 				59AD498129C21BF1000A6C3C /* SignUpController.swift */,
 				D2C3BC9B29DDC84800D1CD76 /* SettingsController.swift */,
+				D9A507AB29DFEF48007D4D71 /* ForgetPasswordView.swift */,
 				D2C3BC9D29DDD60800D1CD76 /* NotificationController.swift */,
 				D96447D729DE61E700847733 /* profileController.swift */,
 				59AD497029C1F562000A6C3C /* Main.storyboard */,
@@ -137,6 +174,33 @@
 				6EE75FD0937D7C0A2C56B4EA /* Pods-Runner.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9413E6829E8C78C00E13C4F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9413E6929E8C78C00E13C4F /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		D9413E6E29E8C79900E13C4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9413E6F29E8C79900E13C4F /* AddFoodView.swift */,
+				D9413E7029E8C79900E13C4F /* EditFoodView.swift */,
+				D9413E7129E8C79900E13C4F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9413E7529E8C7A000E13C4F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D9413E7629E8C7A000E13C4F /* TimeFormatting.swift */,
+				D9413E9529E8D48000E13C4F /* Utils.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D96447B729DE30BC00847733 /* utils */ = {
@@ -180,6 +244,9 @@
 			children = (
 				D96447C229DE30BC00847733 /* LoginViewModel.swift */,
 				D96447C329DE30BC00847733 /* SignUpViewModel.swift */,
+				D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */,
+				D9A507A329DFD775007D4D71 /* GenCodeViewModel.swift */,
+				D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,6 +259,8 @@
 				D96447CF29DE30DC00847733 /* AuthInterceptor.swift */,
 				D96447D029DE30DC00847733 /* LoginModels.swift */,
 				D96447D129DE30DC00847733 /* GenericResponse.swift */,
+				D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */,
+				D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,25 +383,40 @@
 				D96447D329DE30DC00847733 /* RefreshTokenResponse.swift in Sources */,
 				D96447D529DE30DC00847733 /* LoginModels.swift in Sources */,
 				D96447D429DE30DC00847733 /* AuthInterceptor.swift in Sources */,
+				D9A507A829DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift in Sources */,
 				59AD498229C21BF1000A6C3C /* SignUpController.swift in Sources */,
 				D27E036929C3BEFD0000C2BB /* MapViewController.swift in Sources */,
+				D9A507AA29DFD9E1007D4D71 /* ChangePasswordView.swift in Sources */,
 				D96447CB29DE30BC00847733 /* SignUpViewModel.swift in Sources */,
 				D96447D629DE30DC00847733 /* GenericResponse.swift in Sources */,
 				D96447C529DE30BC00847733 /* Enums.swift in Sources */,
+				D9A507AC29DFEF48007D4D71 /* ForgetPasswordView.swift in Sources */,
+				D9413E9429E8C84300E13C4F /* HomeController.swift in Sources */,
+				D9A5079E29DFC7B9007D4D71 /* GenCodeReq.swift in Sources */,
 				D96447C829DE30BC00847733 /* NetworkManager.swift in Sources */,
 				D96447D829DE61E700847733 /* profileController.swift in Sources */,
+				D9A507A029DFD4D3007D4D71 /* ForgetPasswordViewModel.swift in Sources */,
+				D9413E9629E8D48000E13C4F /* Utils.swift in Sources */,
+				D9413E7429E8C79900E13C4F /* ContentView.swift in Sources */,
+				D9413E7729E8C7A000E13C4F /* TimeFormatting.swift in Sources */,
+				D9A507A429DFD775007D4D71 /* GenCodeViewModel.swift in Sources */,
 				D2C3BC9E29DDD60800D1CD76 /* NotificationController.swift in Sources */,
 				D96447C629DE30BC00847733 /* Helpers.swift in Sources */,
 				59AD496F29C1F562000A6C3C /* ViewController.swift in Sources */,
+				D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */,
+				D9A5079C29DFC70F007D4D71 /* forgetPasswordReq.swift in Sources */,
 				D96447D229DE30DC00847733 /* SignUpRequest.swift in Sources */,
 				D2C3BC9C29DDC84800D1CD76 /* SettingsController.swift in Sources */,
 				D96447CA29DE30BC00847733 /* LoginViewModel.swift in Sources */,
 				59AD497529C1F562000A6C3C /* Runner.xcdatamodeld in Sources */,
 				59AD496B29C1F562000A6C3C /* AppDelegate.swift in Sources */,
+				D9413E6C29E8C78C00E13C4F /* DataController.swift in Sources */,
 				D96447C729DE30BC00847733 /* AuthRepo.swift in Sources */,
 				D96447C429DE30BC00847733 /* Consts.swift in Sources */,
 				D96447C929DE30BC00847733 /* DataParser.swift in Sources */,
 				59AD496D29C1F562000A6C3C /* SceneDelegate.swift in Sources */,
+				D9A507A629DFD7D0007D4D71 /* CodeView.swift in Sources */,
+				D9413E7229E8C79900E13C4F /* AddFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

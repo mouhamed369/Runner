@@ -52,5 +52,68 @@ final class AuthRepo : DataParser {
         }
         
     }
+    static func resetPassRep(resetPassReq : forgetPasswordReq) async ->  GenericResponse?{
+        do{
+            let headers : HTTPHeaders = [
+                "Content-Type": "application/json",
+                //"Accept": "application/json"
+            ]
+            let resp = try await NetworkManager.shared.post(path: "resetpassword", parameters: resetPassReq, headers: headers)
+            
+            let data: GenericResponse = try self.parseData(data: resp)
+            
+            return data
+            
+        }
+        catch let error {
+            print(error.localizedDescription)
+            return nil
+        }
+        
+    }
+    static func verifCode(verifCode: GenCodeRep) async ->  GenericResponse?{
+        do{
+            let headers : HTTPHeaders = [
+                "Content-Type": "application/json",
+                //"Accept": "application/json"
+            ]
+            let resp = try await NetworkManager.shared.post(path: "findEmail", parameters: verifCode, headers: headers)
+            
+            let data: GenericResponse = try self.parseData(data: resp)
+            
+            return data
+            
+        }
+        catch let error {
+            print(error.localizedDescription)
+            return nil
+        }
+        
+    }
+    static func unsecurechangepassword(resetPassword: SignUpRequest) async ->  GenericResponse?{
+        do{
+            let headers : HTTPHeaders = [
+                "Content-Type": "application/json",
+                //"Accept": "application/json"
+            ]
+            let resp = try await NetworkManager.shared.post(path: "resetpassword", parameters: resetPassword, headers: headers)
+            
+            let data: GenericResponse = try self.parseData(data: resp)
+            
+            return data
+            
+        }
+        catch let error {
+            print(error.localizedDescription)
+            return nil
+        }
+        
+    }
+    
+    
+    
+    
     
 }
+    
+
