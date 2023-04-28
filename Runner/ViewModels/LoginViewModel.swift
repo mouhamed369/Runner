@@ -14,8 +14,8 @@ extension ViewController {
         @MainActor @Published var response: String? = nil
         @MainActor @Published var internalError: String? = nil
         
-        func handleLoginRequest(req: LoginRequest) async -> Void {
-            
+        func handleLoginRequest(req: LoginRequest) async  -> Void {
+        
             let res: LoginResponse? = await AuthRepo.loginReq(loginReq: req)
             
             if res != nil {

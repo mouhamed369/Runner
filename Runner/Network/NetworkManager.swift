@@ -16,11 +16,10 @@ actor NetworkManager: GlobalActor {
     
     private let maxWaitTime = 100.0
     
-    func get<T: Encodable>(path: String, parameters: T?, headers: HTTPHeaders) async throws -> Data {
+    func get(path: String, headers: HTTPHeaders) async throws -> Data {
         // You must resume the continuation exactly once
         return try await self.call(
             path:path,
-            parameters: parameters,
             headers: headers,
             method: HTTPMethod.get
         )
@@ -85,6 +84,33 @@ actor NetworkManager: GlobalActor {
                             throwing:
                                 self.handleError(error: error)
                         )
+                }
+            }
+        }
+    }
+    
+    private func call(path: String, headers: HTTPHeaders, method: HTTPMethod) async throws -> Data {
+        return try await withCheckedThrowingContinuation { continuation in
+            AF.request(
+                "\(Consts.ENDPOINT)/\(path)",
+                headers: headers,
+                requestModifier: { $0.timeoutInterval = self.maxWaitTime }
+            )
+            .response { response in
+                switch(response.result) {
+                    
+                case let .success(data):
+                    continuation
+                        .resume(returning: data!)
+                    break;
+                    
+                case let .failure(error):
+                    continuation
+                        .resume(
+                            throwing:
+                                self.handleError(error: error)
+                        )
+                    break
                 }
             }
         }

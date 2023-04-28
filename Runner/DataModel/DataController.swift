@@ -22,7 +22,7 @@ class DataController: ObservableObject {
         managedContext =
         appDelegate.persistentContainer.viewContext
         
-        managedContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+       // managedContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
     }
     
     func getAll() -> [NSManagedObject] {
@@ -34,6 +34,7 @@ class DataController: ObservableObject {
         
         do {
             result = try managedContext.fetch(fetchRequest)
+            print(result)
         }
         catch _ as NSError {
             print("Error fetching data...")

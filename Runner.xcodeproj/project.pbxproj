@@ -19,6 +19,9 @@
 		D27E036929C3BEFD0000C2BB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E036829C3BEFD0000C2BB /* MapViewController.swift */; };
 		D2C3BC9C29DDC84800D1CD76 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C3BC9B29DDC84800D1CD76 /* SettingsController.swift */; };
 		D2C3BC9E29DDD60800D1CD76 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C3BC9D29DDD60800D1CD76 /* NotificationController.swift */; };
+		D922CCA229EDF6C800CC66D3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922CCA129EDF6C800CC66D3 /* Alert.swift */; };
+		D922CCA429EDFC1500CC66D3 /* ButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922CCA329EDFC1500CC66D3 /* ButtonExtensions.swift */; };
+		D922CCA629EDFE1700CC66D3 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922CCA529EDFE1700CC66D3 /* LoadingScreen.swift */; };
 		D9413E6C29E8C78C00E13C4F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E6929E8C78C00E13C4F /* DataController.swift */; };
 		D9413E7229E8C79900E13C4F /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E6F29E8C79900E13C4F /* AddFoodView.swift */; };
 		D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E7029E8C79900E13C4F /* EditFoodView.swift */; };
@@ -40,6 +43,11 @@
 		D96447D529DE30DC00847733 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447D029DE30DC00847733 /* LoginModels.swift */; };
 		D96447D629DE30DC00847733 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447D129DE30DC00847733 /* GenericResponse.swift */; };
 		D96447D829DE61E700847733 /* profileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96447D729DE61E700847733 /* profileController.swift */; };
+		D99D06D229EF473E00B738CA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D129EF473E00B738CA /* DetailsViewController.swift */; };
+		D99D06D429EF50AB00B738CA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D329EF50AB00B738CA /* Article.swift */; };
+		D99D06D629EF5D7D00B738CA /* ArticlesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D529EF5D7D00B738CA /* ArticlesRepo.swift */; };
+		D99D06D829EF686C00B738CA /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D729EF686C00B738CA /* ArticlesViewModel.swift */; };
+		D99D06DA29EF850D00B738CA /* ArticlesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D929EF850D00B738CA /* ArticlesListView.swift */; };
 		D9A5079C29DFC70F007D4D71 /* forgetPasswordReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */; };
 		D9A5079E29DFC7B9007D4D71 /* GenCodeReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */; };
 		D9A507A029DFD4D3007D4D71 /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */; };
@@ -67,6 +75,9 @@
 		D27E036829C3BEFD0000C2BB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D2C3BC9B29DDC84800D1CD76 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		D2C3BC9D29DDD60800D1CD76 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D922CCA129EDF6C800CC66D3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D922CCA329EDFC1500CC66D3 /* ButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtensions.swift; sourceTree = "<group>"; };
+		D922CCA529EDFE1700CC66D3 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		D9413E6929E8C78C00E13C4F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		D9413E6F29E8C79900E13C4F /* AddFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		D9413E7029E8C79900E13C4F /* EditFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
@@ -88,6 +99,11 @@
 		D96447D029DE30DC00847733 /* LoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		D96447D129DE30DC00847733 /* GenericResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		D96447D729DE61E700847733 /* profileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileController.swift; sourceTree = "<group>"; };
+		D99D06D129EF473E00B738CA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D99D06D329EF50AB00B738CA /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D99D06D529EF5D7D00B738CA /* ArticlesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRepo.swift; sourceTree = "<group>"; };
+		D99D06D729EF686C00B738CA /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		D99D06D929EF850D00B738CA /* ArticlesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListView.swift; sourceTree = "<group>"; };
 		D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPasswordReq.swift; sourceTree = "<group>"; };
 		D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenCodeReq.swift; sourceTree = "<group>"; };
 		D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
@@ -147,9 +163,11 @@
 				D96447C129DE30BC00847733 /* ViewModels */,
 				D96447B729DE30BC00847733 /* utils */,
 				59AD496A29C1F562000A6C3C /* AppDelegate.swift */,
+				D99D06D129EF473E00B738CA /* DetailsViewController.swift */,
 				D9413E9329E8C84300E13C4F /* HomeController.swift */,
 				59AD496C29C1F562000A6C3C /* SceneDelegate.swift */,
 				D9A507A529DFD7D0007D4D71 /* CodeView.swift */,
+				D99D06D929EF850D00B738CA /* ArticlesListView.swift */,
 				D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */,
 				59AD496E29C1F562000A6C3C /* ViewController.swift */,
 				D27E036829C3BEFD0000C2BB /* MapViewController.swift */,
@@ -199,6 +217,9 @@
 			children = (
 				D9413E7629E8C7A000E13C4F /* TimeFormatting.swift */,
 				D9413E9529E8D48000E13C4F /* Utils.swift */,
+				D922CCA129EDF6C800CC66D3 /* Alert.swift */,
+				D922CCA329EDFC1500CC66D3 /* ButtonExtensions.swift */,
+				D922CCA529EDFE1700CC66D3 /* LoadingScreen.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -227,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				D96447BD29DE30BC00847733 /* AuthRepo.swift */,
+				D99D06D529EF5D7D00B738CA /* ArticlesRepo.swift */,
 			);
 			path = Reqs;
 			sourceTree = "<group>";
@@ -247,6 +269,7 @@
 				D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */,
 				D9A507A329DFD775007D4D71 /* GenCodeViewModel.swift */,
 				D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */,
+				D99D06D729EF686C00B738CA /* ArticlesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -261,6 +284,7 @@
 				D96447D129DE30DC00847733 /* GenericResponse.swift */,
 				D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */,
 				D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */,
+				D99D06D329EF50AB00B738CA /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -381,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D96447D329DE30DC00847733 /* RefreshTokenResponse.swift in Sources */,
+				D99D06D229EF473E00B738CA /* DetailsViewController.swift in Sources */,
 				D96447D529DE30DC00847733 /* LoginModels.swift in Sources */,
 				D96447D429DE30DC00847733 /* AuthInterceptor.swift in Sources */,
 				D9A507A829DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift in Sources */,
@@ -392,6 +417,7 @@
 				D96447C529DE30BC00847733 /* Enums.swift in Sources */,
 				D9A507AC29DFEF48007D4D71 /* ForgetPasswordView.swift in Sources */,
 				D9413E9429E8C84300E13C4F /* HomeController.swift in Sources */,
+				D99D06D829EF686C00B738CA /* ArticlesViewModel.swift in Sources */,
 				D9A5079E29DFC7B9007D4D71 /* GenCodeReq.swift in Sources */,
 				D96447C829DE30BC00847733 /* NetworkManager.swift in Sources */,
 				D96447D829DE61E700847733 /* profileController.swift in Sources */,
@@ -400,10 +426,15 @@
 				D9413E7429E8C79900E13C4F /* ContentView.swift in Sources */,
 				D9413E7729E8C7A000E13C4F /* TimeFormatting.swift in Sources */,
 				D9A507A429DFD775007D4D71 /* GenCodeViewModel.swift in Sources */,
+				D922CCA629EDFE1700CC66D3 /* LoadingScreen.swift in Sources */,
+				D99D06D629EF5D7D00B738CA /* ArticlesRepo.swift in Sources */,
 				D2C3BC9E29DDD60800D1CD76 /* NotificationController.swift in Sources */,
+				D922CCA429EDFC1500CC66D3 /* ButtonExtensions.swift in Sources */,
 				D96447C629DE30BC00847733 /* Helpers.swift in Sources */,
 				59AD496F29C1F562000A6C3C /* ViewController.swift in Sources */,
 				D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */,
+				D922CCA229EDF6C800CC66D3 /* Alert.swift in Sources */,
+				D99D06D429EF50AB00B738CA /* Article.swift in Sources */,
 				D9A5079C29DFC70F007D4D71 /* forgetPasswordReq.swift in Sources */,
 				D96447D229DE30DC00847733 /* SignUpRequest.swift in Sources */,
 				D2C3BC9C29DDC84800D1CD76 /* SettingsController.swift in Sources */,
@@ -412,6 +443,7 @@
 				59AD496B29C1F562000A6C3C /* AppDelegate.swift in Sources */,
 				D9413E6C29E8C78C00E13C4F /* DataController.swift in Sources */,
 				D96447C729DE30BC00847733 /* AuthRepo.swift in Sources */,
+				D99D06DA29EF850D00B738CA /* ArticlesListView.swift in Sources */,
 				D96447C429DE30BC00847733 /* Consts.swift in Sources */,
 				D96447C929DE30BC00847733 /* DataParser.swift in Sources */,
 				59AD496D29C1F562000A6C3C /* SceneDelegate.swift in Sources */,
@@ -566,6 +598,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "test camera permission";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "if hajtik bhata haya";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = abcs;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TEST PHOTO permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -594,6 +631,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "test camera permission";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "if hajtik bhata haya";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = abcs;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "TEST PHOTO permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
