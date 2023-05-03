@@ -7,10 +7,9 @@
 
 import Foundation
 
-
 public class DataParser {
-    
-    static func parseData<T: Decodable>(data: Data) throws -> T {
+    // FIX: Swiftier method name
+    static func parseData<T: Decodable>(from data: Data) throws -> T {
         guard let decodedData = try? JSONDecoder().decode(T.self, from: data)
         else {
             throw NSError(

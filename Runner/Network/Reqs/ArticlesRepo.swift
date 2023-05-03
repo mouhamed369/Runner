@@ -19,7 +19,7 @@ final class ArticleRepo : DataParser {
             
             let resp = try await NetworkManager.shared.get(path: "articles", headers: headers)
             
-            return try self.parseData(data: resp)
+            return try self.parseData(from: resp)
             
         }
         catch let error {

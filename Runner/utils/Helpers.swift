@@ -15,3 +15,10 @@ extension View {
     }
 }
 
+
+func openLink(link: String) {
+    
+    guard let url = URL(string: link) else { return }
+    UIApplication.shared.open(url)
+}
+

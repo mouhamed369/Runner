@@ -16,13 +16,11 @@ actor NetworkManager: GlobalActor {
     
     private let maxWaitTime = 100.0
     
-    func get(path: String, headers: HTTPHeaders) async throws -> Data {
+    func get(path: String, headers: HTTPHeaders? = nil) async throws -> Data {
         // You must resume the continuation exactly once
         return try await self.call(
             path:path,
-            headers: headers,
-            method: HTTPMethod.get
-        )
+            headers: headers)
     }
     
     func post<T: Encodable>(path: String, parameters: T?, headers: HTTPHeaders) async throws -> Data {
@@ -59,6 +57,44 @@ actor NetworkManager: GlobalActor {
             headers: headers,
             method: HTTPMethod.delete
         )
+    }
+    
+    private func call(path: String, headers: HTTPHeaders? = nil) async throws -> Data {
+        
+
+        var defaultHeaders : HTTPHeaders = [
+            "Accept": "application/json",
+        ]
+        
+        if headers != nil {
+            headers!.forEach { header in
+                defaultHeaders.add(header)
+            }
+        }
+        
+        return try await withCheckedThrowingContinuation { continuation in
+            AF.request(
+                "\(Consts.ENDPOINT)/\(path)",
+                headers: defaultHeaders,
+                requestModifier: { $0.timeoutInterval = self.maxWaitTime }
+            )
+            .response { response in
+                debugPrint(response)
+                switch(response.result) {
+                    
+                case let .success(data):
+                    continuation
+                        .resume(returning: data!)
+                    
+                case let .failure(error):
+                    continuation
+                        .resume(
+                            throwing:
+                                self.handleError(error: error)
+                        )
+                }
+            }
+        }
     }
     
     private func call<T: Encodable>(path: String, parameters: T?, headers: HTTPHeaders, method: HTTPMethod) async throws -> Data {

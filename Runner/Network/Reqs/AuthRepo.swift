@@ -19,7 +19,7 @@ final class AuthRepo : DataParser {
             
             let resp = try await NetworkManager.shared.post(path: "Signup", parameters: userDetails, headers: headers)
             
-            let data: GenericResponse = try self.parseData(data: resp)
+            let data: GenericResponse = try self.parseData(from: resp)
             
             return data
             
@@ -41,7 +41,7 @@ final class AuthRepo : DataParser {
             
             let resp = try await NetworkManager.shared.post(path: "login", parameters: loginReq, headers: headers)
             
-            let data: LoginResponse = try self.parseData(data: resp)
+            let data: LoginResponse = try self.parseData(from: resp)
             
             return data
             
@@ -60,7 +60,7 @@ final class AuthRepo : DataParser {
             ]
             let resp = try await NetworkManager.shared.post(path: "resetpassword", parameters: resetPassReq, headers: headers)
             
-            let data: GenericResponse = try self.parseData(data: resp)
+            let data: GenericResponse = try self.parseData(from: resp)
             
             return data
             
@@ -79,7 +79,7 @@ final class AuthRepo : DataParser {
             ]
             let resp = try await NetworkManager.shared.post(path: "findEmail", parameters: verifCode, headers: headers)
             
-            let data: GenericResponse = try self.parseData(data: resp)
+            let data: GenericResponse = try self.parseData(from: resp)
             
             return data
             
@@ -98,7 +98,7 @@ final class AuthRepo : DataParser {
             ]
             let resp = try await NetworkManager.shared.post(path: "resetpassword", parameters: resetPassword, headers: headers)
             
-            let data: GenericResponse = try self.parseData(data: resp)
+            let data: GenericResponse = try self.parseData(from: resp)
             
             return data
             
