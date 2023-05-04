@@ -56,10 +56,12 @@
 		D9A507A829DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */; };
 		D9A507AA29DFD9E1007D4D71 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */; };
 		D9A507AC29DFEF48007D4D71 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507AB29DFEF48007D4D71 /* ForgetPasswordView.swift */; };
-		D9B159B12A025C74006B2B17 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B159B02A025C74006B2B17 /* PersistanceService.swift */; };
-		D9B159B32A025CAC006B2B17 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B159B22A025CAC006B2B17 /* Persistable.swift */; };
+		D9AE2CAB2A040C10008AFEEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9AE2CAD2A040C10008AFEEC /* Localizable.strings */; };
+		D9AE2CB02A0411F8008AFEEC /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE2CAF2A0411F8008AFEEC /* LanguageViewController.swift */; };
 		D9B159E22A029087006B2B17 /* ItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B159E12A029087006B2B17 /* ItemCard.swift */; };
 		D9B159E62A029642006B2B17 /* ArticleRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B159E52A029642006B2B17 /* ArticleRepo.swift */; };
+		D9F45A022A042CC700DEC137 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F45A012A042CC700DEC137 /* AboutViewController.swift */; };
+		D9F45A042A042D1A00DEC137 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F45A032A042D1A00DEC137 /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,10 +118,15 @@
 		D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsecurChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		D9A507AB29DFEF48007D4D71 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
-		D9B159B02A025C74006B2B17 /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
-		D9B159B22A025CAC006B2B17 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		D9AE2CA52A040B26008AFEEC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		D9AE2CA62A040B27008AFEEC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D9AE2CAC2A040C10008AFEEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D9AE2CAE2A040C13008AFEEC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D9AE2CAF2A0411F8008AFEEC /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		D9B159E12A029087006B2B17 /* ItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCard.swift; sourceTree = "<group>"; };
 		D9B159E52A029642006B2B17 /* ArticleRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepo.swift; sourceTree = "<group>"; };
+		D9F45A012A042CC700DEC137 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D9F45A032A042D1A00DEC137 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +170,6 @@
 		59AD496929C1F562000A6C3C /* Runner */ = {
 			isa = PBXGroup;
 			children = (
-				D9B159AF2A025C1F006B2B17 /* Service */,
 				D9413E7529E8C7A000E13C4F /* Helpers */,
 				D9413E6E29E8C79900E13C4F /* Views */,
 				D9413E6829E8C78C00E13C4F /* DataModel */,
@@ -172,10 +178,12 @@
 				D96447C129DE30BC00847733 /* ViewModels */,
 				D96447B729DE30BC00847733 /* utils */,
 				59AD496A29C1F562000A6C3C /* AppDelegate.swift */,
+				D9F45A012A042CC700DEC137 /* AboutViewController.swift */,
 				D99D06D129EF473E00B738CA /* DetailsViewController.swift */,
 				D9413E9329E8C84300E13C4F /* HomeController.swift */,
 				59AD496C29C1F562000A6C3C /* SceneDelegate.swift */,
 				D9A507A529DFD7D0007D4D71 /* CodeView.swift */,
+				D9AE2CAF2A0411F8008AFEEC /* LanguageViewController.swift */,
 				D99D06D929EF850D00B738CA /* ArticlesListView.swift */,
 				D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */,
 				59AD496E29C1F562000A6C3C /* ViewController.swift */,
@@ -190,6 +198,7 @@
 				59AD497829C1F562000A6C3C /* LaunchScreen.storyboard */,
 				59AD497B29C1F562000A6C3C /* Info.plist */,
 				59AD497329C1F562000A6C3C /* Runner.xcdatamodeld */,
+				D9AE2CAD2A040C10008AFEEC /* Localizable.strings */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 				D9413E7029E8C79900E13C4F /* EditFoodView.swift */,
 				D9413E7129E8C79900E13C4F /* ContentView.swift */,
 				D9B159E12A029087006B2B17 /* ItemCard.swift */,
+				D9F45A032A042D1A00DEC137 /* AboutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,15 +310,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D9B159AF2A025C1F006B2B17 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				D9B159B02A025C74006B2B17 /* PersistanceService.swift */,
-				D9B159B22A025CAC006B2B17 /* Persistable.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,6 +354,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 59AD495E29C1F562000A6C3C;
 			productRefGroup = 59AD496829C1F562000A6C3C /* Products */;
@@ -370,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59AD497A29C1F562000A6C3C /* LaunchScreen.storyboard in Resources */,
+				D9AE2CAB2A040C10008AFEEC /* Localizable.strings in Resources */,
 				59AD497729C1F562000A6C3C /* Assets.xcassets in Resources */,
 				59AD497229C1F562000A6C3C /* Main.storyboard in Resources */,
 			);
@@ -428,11 +431,12 @@
 				D99D06D229EF473E00B738CA /* DetailsViewController.swift in Sources */,
 				D96447D529DE30DC00847733 /* LoginModels.swift in Sources */,
 				D96447D429DE30DC00847733 /* AuthInterceptor.swift in Sources */,
+				D9F45A042A042D1A00DEC137 /* AboutView.swift in Sources */,
 				D9A507A829DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift in Sources */,
-				D9B159B12A025C74006B2B17 /* PersistanceService.swift in Sources */,
 				59AD498229C21BF1000A6C3C /* SignUpController.swift in Sources */,
 				D27E036929C3BEFD0000C2BB /* MapViewController.swift in Sources */,
 				D9A507AA29DFD9E1007D4D71 /* ChangePasswordView.swift in Sources */,
+				D9F45A022A042CC700DEC137 /* AboutViewController.swift in Sources */,
 				D96447CB29DE30BC00847733 /* SignUpViewModel.swift in Sources */,
 				D96447D629DE30DC00847733 /* GenericResponse.swift in Sources */,
 				D96447C529DE30BC00847733 /* Enums.swift in Sources */,
@@ -444,6 +448,7 @@
 				D96447D829DE61E700847733 /* profileController.swift in Sources */,
 				D9A507A029DFD4D3007D4D71 /* ForgetPasswordViewModel.swift in Sources */,
 				D9413E9629E8D48000E13C4F /* Utils.swift in Sources */,
+				D9AE2CB02A0411F8008AFEEC /* LanguageViewController.swift in Sources */,
 				D9413E7429E8C79900E13C4F /* ContentView.swift in Sources */,
 				D9413E7729E8C7A000E13C4F /* TimeFormatting.swift in Sources */,
 				D9A507A429DFD775007D4D71 /* GenCodeViewModel.swift in Sources */,
@@ -452,7 +457,6 @@
 				D2C3BC9E29DDD60800D1CD76 /* NotificationController.swift in Sources */,
 				D922CCA429EDFC1500CC66D3 /* ButtonExtensions.swift in Sources */,
 				D96447C629DE30BC00847733 /* Helpers.swift in Sources */,
-				D9B159B32A025CAC006B2B17 /* Persistable.swift in Sources */,
 				59AD496F29C1F562000A6C3C /* ViewController.swift in Sources */,
 				D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */,
 				D922CCA229EDF6C800CC66D3 /* Alert.swift in Sources */,
@@ -483,6 +487,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				59AD497129C1F562000A6C3C /* Base */,
+				D9AE2CA52A040B26008AFEEC /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -491,8 +496,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				59AD497929C1F562000A6C3C /* Base */,
+				D9AE2CA62A040B27008AFEEC /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9AE2CAD2A040C10008AFEEC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9AE2CAC2A040C10008AFEEC /* en */,
+				D9AE2CAE2A040C13008AFEEC /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -502,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -562,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

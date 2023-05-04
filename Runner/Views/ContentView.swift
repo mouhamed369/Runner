@@ -101,16 +101,16 @@ struct FinalUI: View {
 
                     HStack{
                         Button(action: {
-                                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                            let viewController = storyboard.instantiateViewController(withIdentifier: "Tab")
-                                            UIApplication.shared.windows.first?.rootViewController?.present(viewController, animated: true)
-                                        }, label: {
-                                            Label("Back", systemImage: "")
-                                                .font(.headline)
-                                                .foregroundColor(.black)
-                                        }).padding()
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let viewController = storyboard.instantiateViewController(withIdentifier: "Tab")
+                            UIApplication.shared.windows.first?.rootViewController?.present(viewController, animated: true, completion: nil)
+                        }) {
+                            Label("Back", systemImage: "")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                        }
+                        .padding()
                         Spacer()
-
                     }
                     Text("today")
                         .font(.system(size: 40))

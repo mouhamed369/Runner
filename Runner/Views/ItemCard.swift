@@ -31,8 +31,6 @@ struct ItemCard: View {
                 @unknown default:
                     Image("placeholder")
                 }
-            }.onTapGesture {
-                openLink(link: link)
             }
             
             HStack {
@@ -52,6 +50,9 @@ struct ItemCard: View {
                 Spacer()
             }
             .padding()
+        }
+        .onTapGesture {
+            openLink(link: link)
         }
         .cornerRadius(10)
         .overlay(
