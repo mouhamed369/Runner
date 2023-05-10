@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cw8-E0-u4h">
-                                <rect key="frame" x="30" y="469.33333333333326" width="333" height="298.66666666666674"/>
+                                <rect key="frame" x="30" y="378" width="333" height="390"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9N-S3-tC8">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="50"/>
@@ -35,7 +35,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9x-Oh-Hb9">
-                                        <rect key="frame" x="0.0" y="70.000000000000057" width="333" height="50"/>
+                                        <rect key="frame" x="0.0" y="70" width="333" height="50"/>
                                         <color key="tintColor" systemColor="linkColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="zCa-rZ-bmT"/>
@@ -44,7 +44,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvD-2e-8wP">
-                                        <rect key="frame" x="0.0" y="140.00000000000006" width="333" height="50"/>
+                                        <rect key="frame" x="0.0" y="140" width="333" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="0ba-mG-PDa"/>
                                         </constraints>
@@ -55,8 +55,20 @@
                                             <action selector="loginFn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcA-HS-6WH"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vg-WP-hMV">
+                                        <rect key="frame" x="0.0" y="210" width="333" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ufy-ty-BOf">
+                                        <rect key="frame" x="0.0" y="250.33333333333337" width="335" height="31"/>
+                                        <connections>
+                                            <action selector="rememberme:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Bl-OB-3ro"/>
+                                        </connections>
+                                    </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1v-Af-22M">
-                                        <rect key="frame" x="0.0" y="210.00000000000006" width="333" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="301.33333333333337" width="333" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Forget Password?"/>
                                         <connections>
@@ -64,7 +76,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsK-fA-Onl">
-                                        <rect key="frame" x="0.0" y="264.33333333333331" width="333" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="355.66666666666663" width="333" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -78,16 +90,12 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjG-6F-gzM">
-                                <rect key="frame" x="91" y="137" width="210" height="78"/>
+                                <rect key="frame" x="95" y="95" width="210" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="49"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pngfind.com-flash-logo-png-52884" translatesAutoresizingMaskIntoConstraints="NO" id="yLP-W2-g7M">
-                                <rect key="frame" x="67" y="253" width="259" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy6-Qg-npW">
                                 <rect key="frame" x="313" y="59" width="80" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,6 +108,10 @@
                                     <action selector="faceIDButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SWW-jx-3U3"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pngfind.com-flash-logo-png-52884" translatesAutoresizingMaskIntoConstraints="NO" id="yLP-W2-g7M">
+                                <rect key="frame" x="67" y="192" width="259" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -113,7 +125,12 @@
                     <connections>
                         <outlet property="emailTf" destination="v9N-S3-tC8" id="1fD-IG-utZ"/>
                         <outlet property="faceIDButton" destination="fy6-Qg-npW" id="XUY-GB-JIZ"/>
+                        <outlet property="login" destination="TvD-2e-8wP" id="5hZ-ds-zWA"/>
+                        <outlet property="newaccount" destination="wsK-fA-Onl" id="GpV-nu-QOh"/>
+                        <outlet property="pass" destination="g1v-Af-22M" id="ijR-BZ-wnD"/>
                         <outlet property="passwordTf" destination="O9x-Oh-Hb9" id="pGv-jD-Svk"/>
+                        <outlet property="remember" destination="6Vg-WP-hMV" id="osz-ri-wM7"/>
+                        <outlet property="wlc" destination="qjG-6F-gzM" id="bKH-WU-xdx"/>
                         <segue destination="FZ0-Xs-P7u" kind="presentation" identifier="signUpSeg" modalPresentationStyle="fullScreen" id="6Kc-0R-LU1"/>
                         <segue destination="Tou-HG-G8h" kind="presentation" identifier="navbar" modalPresentationStyle="fullScreen" id="XlL-9t-g7d"/>
                     </connections>
@@ -241,10 +258,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="X0e-5z-gMN"/>
                     <connections>
+                        <outlet property="account" destination="Lvr-8Y-byC" id="QsT-L0-N1A"/>
                         <outlet property="emailtf" destination="wHW-HJ-zP2" id="291-Wd-woS"/>
+                        <outlet property="loggin" destination="zDh-iH-GeJ" id="Ik6-73-eEl"/>
                         <outlet property="nametf" destination="C75-Vo-DQc" id="yd2-s8-Tlt"/>
                         <outlet property="phonetf" destination="Xx9-je-ubn" id="pAl-ab-4PQ"/>
                         <outlet property="pwdtf" destination="zVK-fV-Dq0" id="sZd-gB-7f8"/>
+                        <outlet property="singup" destination="dwP-Tj-XOL" id="1sa-3V-KN9"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="signInSeg" modalPresentationStyle="fullScreen" id="eGV-nE-lxV"/>
                         <segue destination="Tou-HG-G8h" kind="presentation" identifier="navbar" modalPresentationStyle="fullScreen" id="2fq-EU-VrB"/>
                     </connections>
@@ -503,7 +523,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ym-wu-sbw">
-                                <rect key="frame" x="93" y="102" width="212" height="56"/>
+                                <rect key="frame" x="32" y="102" width="329" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="44"/>
                                 <color key="textColor" systemColor="tertiaryLabelColor"/>
@@ -527,13 +547,6 @@
                                 <rect key="frame" x="229" y="474" width="40" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlF-WC-3zo">
-                                <rect key="frame" x="89" y="473.33333333333326" width="94" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -576,6 +589,13 @@
                                 <rect key="frame" x="108" y="166" width="177" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlF-WC-3zo">
+                                <rect key="frame" x="82" y="469" width="130" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S7a-gG-0k5"/>
                         <color key="backgroundColor" name="bgcolor"/>
@@ -600,7 +620,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="edit" destination="23I-8q-B7b" id="nXf-XQ-O9l"/>
+                        <outlet property="followers" destination="78b-SW-X4S" id="spB-lw-dpJ"/>
                         <outlet property="imgPhoto" destination="DYr-M7-8jc" id="MxQ-hN-dSA"/>
+                        <outlet property="tstep" destination="MlF-WC-3zo" id="nUC-bW-67b"/>
+                        <outlet property="yprofile" destination="4Ym-wu-sbw" id="2Fe-G5-4CJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAX-2S-bTa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -746,6 +770,9 @@
                     <connections>
                         <outlet property="datapiker" destination="iy8-mx-Nn5" id="VGK-re-9cx"/>
                         <outlet property="datePiker" destination="iy8-mx-Nn5" id="Ytb-Km-oKs"/>
+                        <outlet property="remember" destination="qqm-Ya-IT9" id="wzS-q9-Tuf"/>
+                        <outlet property="send" destination="LcV-7P-10f" id="m1t-ra-ssh"/>
+                        <outlet property="ssend" destination="Hj2-gT-snI" id="KGu-Zh-Dzd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9N-yc-Buc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -930,18 +957,6 @@
                                         <rect key="frame" x="48" y="499" width="41" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09L-6d-Svy">
-                                        <rect key="frame" x="128" y="502" width="110" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="About Us">
-                                            <fontDescription key="titleFontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="21"/>
-                                            <color key="baseForegroundColor" systemColor="labelColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="baI-jZ-leR" kind="show" id="H5Y-zD-kAc"/>
-                                        </connections>
-                                    </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="network" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0pW-YK-I5p">
                                         <rect key="frame" x="48" y="568" width="41" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -989,7 +1004,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzh-ub-Z9W">
-                                        <rect key="frame" x="129" y="569" width="121" height="44"/>
+                                        <rect key="frame" x="129" y="573" width="121" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Language ">
@@ -998,6 +1013,18 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="Zge-tA-UhS" kind="show" id="8pZ-c7-SvT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09L-6d-Svy">
+                                        <rect key="frame" x="129" y="501" width="110" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="About Us">
+                                            <fontDescription key="titleFontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="21"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="baI-jZ-leR" kind="show" id="H5Y-zD-kAc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1010,6 +1037,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="4hg-GC-vKI"/>
                     <connections>
+                        <outlet property="aboutus" destination="09L-6d-Svy" id="mS1-x7-673"/>
+                        <outlet property="account" destination="nm9-nz-xoO" id="yin-4L-B4O"/>
+                        <outlet property="lang" destination="mzh-ub-Z9W" id="30L-fg-cVm"/>
+                        <outlet property="lbsettings" destination="WfQ-IT-xj3" id="9QT-I4-9cn"/>
+                        <outlet property="lbsettings2" destination="KCK-aX-SGe" id="Xxh-Bq-tN2"/>
+                        <outlet property="privacy" destination="uKB-Dt-f33" id="z6a-zx-Qyv"/>
+                        <outlet property="remember" destination="ndD-Sl-3Ci" id="Di8-hn-aVj"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="logout" id="XAL-vs-ynh"/>
                     </connections>
                 </viewController>
@@ -1064,6 +1098,9 @@
         <image name="power" catalog="system" width="127" height="128"/>
         <image name="road.lanes" catalog="system" width="128" height="66"/>
         <image name="trash" catalog="system" width="117" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="PinkS">
             <color red="0.96862745098039216" green="0.058823529411764705" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

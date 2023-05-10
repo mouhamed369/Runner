@@ -9,11 +9,17 @@ import UIKit
 
 class NotificationController: UIViewController {
 
+    @IBOutlet weak var ssend: UIButton!
+    @IBOutlet weak var send: UILabel!
+    @IBOutlet weak var remember: UILabel!
     @IBOutlet weak var datePiker: UIDatePicker!
     @IBOutlet weak var datapiker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        send.text = NSLocalizedString("Send Remember Me", comment: "")
+        remember.text = NSLocalizedString("Remember Me", comment: "")
+        ssend.setTitle(NSLocalizedString("Send", comment: ""), for: .normal)
+        //UNUserNotificationCenter.current()
         // Do any additional setup after loading the view.
     }
     
@@ -50,10 +56,11 @@ class NotificationController: UIViewController {
     
     
     @IBAction func btnRemoveRemember(_ sender: Any) {
-        //UNUserNotificationCenter.current()
+        
             //.removeAllPendingNotificationRequests()
         UNUserNotificationCenter.current()
             .removePendingNotificationRequests(withIdentifiers: ["textNotification"])
+        
     }
     
 }

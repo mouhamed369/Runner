@@ -22,6 +22,9 @@
 		D922CCA229EDF6C800CC66D3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922CCA129EDF6C800CC66D3 /* Alert.swift */; };
 		D922CCA429EDFC1500CC66D3 /* ButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922CCA329EDFC1500CC66D3 /* ButtonExtensions.swift */; };
 		D922CCA629EDFE1700CC66D3 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D922CCA529EDFE1700CC66D3 /* LoadingScreen.swift */; };
+		D93D53562A0C111E008C6527 /* ArticleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93D53552A0C111E008C6527 /* ArticleDetailsView.swift */; };
+		D93D53582A0C11C9008C6527 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93D53572A0C11C9008C6527 /* ShareSheet.swift */; };
+		D93D535A2A0C1227008C6527 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93D53592A0C1226008C6527 /* Chip.swift */; };
 		D9413E6C29E8C78C00E13C4F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E6929E8C78C00E13C4F /* DataController.swift */; };
 		D9413E7229E8C79900E13C4F /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E6F29E8C79900E13C4F /* AddFoodView.swift */; };
 		D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9413E7029E8C79900E13C4F /* EditFoodView.swift */; };
@@ -84,6 +87,9 @@
 		D922CCA129EDF6C800CC66D3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D922CCA329EDFC1500CC66D3 /* ButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtensions.swift; sourceTree = "<group>"; };
 		D922CCA529EDFE1700CC66D3 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		D93D53552A0C111E008C6527 /* ArticleDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsView.swift; sourceTree = "<group>"; };
+		D93D53572A0C11C9008C6527 /* ShareSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		D93D53592A0C1226008C6527 /* Chip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
 		D9413E6929E8C78C00E13C4F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		D9413E6F29E8C79900E13C4F /* AddFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		D9413E7029E8C79900E13C4F /* EditFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 				D9A507A529DFD7D0007D4D71 /* CodeView.swift */,
 				D9AE2CAF2A0411F8008AFEEC /* LanguageViewController.swift */,
 				D99D06D929EF850D00B738CA /* ArticlesListView.swift */,
+				D93D53552A0C111E008C6527 /* ArticleDetailsView.swift */,
 				D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */,
 				59AD496E29C1F562000A6C3C /* ViewController.swift */,
 				D27E036829C3BEFD0000C2BB /* MapViewController.swift */,
@@ -224,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				D9413E6F29E8C79900E13C4F /* AddFoodView.swift */,
+				D93D53572A0C11C9008C6527 /* ShareSheet.swift */,
+				D93D53592A0C1226008C6527 /* Chip.swift */,
 				D9413E7029E8C79900E13C4F /* EditFoodView.swift */,
 				D9413E7129E8C79900E13C4F /* ContentView.swift */,
 				D9B159E12A029087006B2B17 /* ItemCard.swift */,
@@ -446,6 +455,7 @@
 				D9A5079E29DFC7B9007D4D71 /* GenCodeReq.swift in Sources */,
 				D96447C829DE30BC00847733 /* NetworkManager.swift in Sources */,
 				D96447D829DE61E700847733 /* profileController.swift in Sources */,
+				D93D535A2A0C1227008C6527 /* Chip.swift in Sources */,
 				D9A507A029DFD4D3007D4D71 /* ForgetPasswordViewModel.swift in Sources */,
 				D9413E9629E8D48000E13C4F /* Utils.swift in Sources */,
 				D9AE2CB02A0411F8008AFEEC /* LanguageViewController.swift in Sources */,
@@ -458,6 +468,7 @@
 				D922CCA429EDFC1500CC66D3 /* ButtonExtensions.swift in Sources */,
 				D96447C629DE30BC00847733 /* Helpers.swift in Sources */,
 				59AD496F29C1F562000A6C3C /* ViewController.swift in Sources */,
+				D93D53582A0C11C9008C6527 /* ShareSheet.swift in Sources */,
 				D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */,
 				D922CCA229EDF6C800CC66D3 /* Alert.swift in Sources */,
 				D99D06D429EF50AB00B738CA /* Article.swift in Sources */,
@@ -474,6 +485,7 @@
 				D96447C429DE30BC00847733 /* Consts.swift in Sources */,
 				D96447C929DE30BC00847733 /* DataParser.swift in Sources */,
 				59AD496D29C1F562000A6C3C /* SceneDelegate.swift in Sources */,
+				D93D53562A0C111E008C6527 /* ArticleDetailsView.swift in Sources */,
 				D9A507A629DFD7D0007D4D71 /* CodeView.swift in Sources */,
 				D9413E7229E8C79900E13C4F /* AddFoodView.swift in Sources */,
 				D9B159E62A029642006B2B17 /* ArticleRepo.swift in Sources */,

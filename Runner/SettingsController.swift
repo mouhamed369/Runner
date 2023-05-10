@@ -9,7 +9,15 @@ import UIKit
 
 class SettingsController: UIViewController {
 
-   var isLogginOut = false
+    @IBOutlet weak var privacy: UIButton!
+    @IBOutlet weak var aboutus: UIButton!
+    @IBOutlet weak var remember: UIButton!
+    @IBOutlet weak var lbsettings2: UILabel!
+    @IBOutlet weak var account: UILabel!
+    @IBOutlet weak var lbsettings: UILabel!
+    @IBOutlet weak var lang: UIButton!
+    
+    var isLogginOut = false
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
         let alertController = UIAlertController(title: "LOGOUT", message:"Are you sur you want to logout?", preferredStyle: .alert)
@@ -48,7 +56,15 @@ class SettingsController: UIViewController {
         self.present(alertController,animated: true,completion: nil)
         }
         
+        lang.setTitle(NSLocalizedString("language", comment: ""), for: .normal)
+        privacy.setTitle(NSLocalizedString("privacy", comment: ""), for: .normal)
+        aboutus.setTitle(NSLocalizedString("aboutus", comment: ""), for: .normal)
+        remember.setTitle(NSLocalizedString("remeberme", comment: ""), for: .normal)
+        account.text = NSLocalizedString("account", comment: "desc")
+        lbsettings2.text = NSLocalizedString("settings", comment: "desc")
+        lbsettings.text = NSLocalizedString("settings", comment: "desc")
 
+        
         // Do any additional setup after loading the view.
     }
     

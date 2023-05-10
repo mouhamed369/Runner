@@ -11,6 +11,11 @@ import LocalAuthentication
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var remember: UILabel!
+    @IBOutlet weak var login: UIButton!
+    @IBOutlet weak var newaccount: UIButton!
+    @IBOutlet weak var pass: UIButton!
+    @IBOutlet weak var wlc: UILabel!
     
     @IBOutlet weak var faceIDButton: UIButton!
     @IBOutlet weak var emailTf: UITextField!
@@ -121,9 +126,43 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        wlc.text = NSLocalizedString("welcome", comment: "")
+        remember.text = NSLocalizedString("Remember Me", comment: "")
+        emailTf.placeholder = NSLocalizedString("Email", comment: "")
+     
+        passwordTf.placeholder = NSLocalizedString("PASS", comment: "")
+        login.setTitle(NSLocalizedString("login", comment: ""), for: .normal)
+        newaccount.setTitle(NSLocalizedString("Don't have an account ? Sign Up", comment: ""), for: .normal)
+        pass.setTitle(NSLocalizedString("Forget Password?", comment: ""), for: .normal)
+        //login.setTitle(NSLocalizedString("edit", comment: ""), for: .normal)
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func rememberme(_ sender: Any) {
+        let alert = UIAlertController(title: "Saving", message: "Do You Want To Save Login Details", preferredStyle: .alert)
+
+                        let yesbutton = UIAlertAction(title: "Yes", style: .default){ (action) in
+
+                            UserDefaults.standard.set(self.emailTf.text!, forKey: "email")
+
+                            UserDefaults.standard.set(self.passwordTf.text!, forKey: "password")
+
+                        }
+
+                        let nobutton = UIAlertAction(title: "No", style: .default){ (action) in
+
+                            print("You Have Not Saved Login Details")
+
+                            UserDefaults.standard.removeObject(forKey: "email")
+
+                        }
+
+                        alert.addAction(yesbutton)
+
+                        alert.addAction(nobutton)
+
+                        present(alert, animated: true, completion: nil)
+    }
     
 }
 

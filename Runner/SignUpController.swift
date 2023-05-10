@@ -9,6 +9,9 @@ import UIKit
 
 class SignUpController: UIViewController {
 
+    @IBOutlet weak var singup: UIButton!
+    @IBOutlet weak var loggin: UIButton!
+    @IBOutlet weak var account: UILabel!
     @IBOutlet weak var pwdtf: UITextField!
     @IBOutlet weak var phonetf: UITextField!
     @IBOutlet weak var emailtf: UITextField!
@@ -88,7 +91,13 @@ class SignUpController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        account.text = NSLocalizedString("Create Account", comment: "desc")
+        loggin.setTitle(NSLocalizedString("already", comment: ""), for: .normal)
+        singup.setTitle(NSLocalizedString("Sign Up", comment: ""), for: .normal)
+        nametf.placeholder = NSLocalizedString("name", comment: "")
+        emailtf.placeholder = NSLocalizedString("Email", comment: "")
+        phonetf.placeholder = NSLocalizedString("phone", comment: "")
+        pwdtf.placeholder = NSLocalizedString("PASS", comment: "")
         // Do any additional setup after loading the view.
     }
     

@@ -8,7 +8,11 @@
 import UIKit
 
 class profileController: UIViewController , UIImagePickerControllerDelegate,UINavigationControllerDelegate{
-
+    @IBOutlet weak var edit: UIButton!
+    
+    @IBOutlet weak var tstep: UILabel!
+    @IBOutlet weak var followers: UILabel!
+    @IBOutlet weak var yprofile: UILabel!
     @IBAction func edit(_ sender: Any) {
         performSegue(withIdentifier: "edit", sender: sender)
     }
@@ -25,6 +29,11 @@ class profileController: UIViewController , UIImagePickerControllerDelegate,UINa
         self.imgPhoto.layer.masksToBounds = false
         self.imgPhoto.layer.cornerRadius = imgPhoto.frame.size.height/2
         self.imgPhoto.clipsToBounds = true
+        tstep.text = NSLocalizedString("step", comment: "desc")
+        followers.text = NSLocalizedString("followers", comment: "desc")
+        yprofile.text = NSLocalizedString("profile", comment: "desc")
+        edit.setTitle(NSLocalizedString("edit", comment: ""), for: .normal)
+        
 
         // Do any additional setup after loading the view.
     }
