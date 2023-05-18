@@ -17,6 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
+    func userNotifictionCenter( _ center : UNUserNotificationCenter,willPresent notifiction : UNNotification,withCompletionHandler completionHandler : @escaping
+        (UNNotificationPresentationOptions)-> Void ){
+            completionHandler([.banner,.sound])
+        
+        
+    }
+    func userNotifictionCenter(_ center : UNUserNotificationCenter,didReceive response:
+    UNNotificationResponse,withCompletionHandler completionHandler : @escaping () -> Void)
+    {
+        print("notifiction clicked")
+        if let dictionary = response.notification.request.content.userInfo as? [String :Any]{
+            
+        }
+    }
 
     // MARK: UISceneSession Lifecycle
 

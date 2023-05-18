@@ -6,36 +6,31 @@
 //
 
 import Foundation
-extension CodeView{
-    class GenCodeRepViewModel : ObservableObject {
+
+class GenCodeViewModel : ObservableObject {
+    
+    func handleVerifyCode(email: String) async -> Int {
         
-        @MainActor @Published var response: String? = nil
-        @MainActor @Published var internalError: String? = nil
+        let res: GenericResponse? = await AuthRepo.findEmail(email: email)
         
-        func handleVerifyCode(req: GenCodeRep) async -> Void {
-            
-            let res: GenericResponse? = await AuthRepo.verifCode(verifCode: req)
-            
-            if (res != nil) {
-                
-                await MainActor.run {
-                    
-                    if (res!.code > 400) {
-                        self.response = nil
-                        self.internalError = res?.message
-                        return
-                    }
-                    
-                    self.response = res!.message
-                    self.internalError = nil
-                }
-            }
-            else {
-                await MainActor.run {
-                    self.internalError = "Code verified successfully"
-                }
-            }
+        if (res != nil) {
+            return 200
         }
+        else {
+            
+            return 400
+        }
+    }
+    
+    func handleResetPassword(password: String, code: String) async -> Int {
         
+        let res: GenericResponse? = await AuthRepo.resetPassword(resetPassReq: ResetPwdBody(ActivationCode: code, Password: password))
+        
+        if (res != nil) {
+            return 200
+        }
+        else {
+            return 400
+        }
     }
 }

@@ -51,18 +51,16 @@
 		D99D06D629EF5D7D00B738CA /* ArticlesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D529EF5D7D00B738CA /* ArticlesRepo.swift */; };
 		D99D06D829EF686C00B738CA /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D729EF686C00B738CA /* ArticlesViewModel.swift */; };
 		D99D06DA29EF850D00B738CA /* ArticlesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D06D929EF850D00B738CA /* ArticlesListView.swift */; };
-		D9A5079C29DFC70F007D4D71 /* forgetPasswordReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */; };
-		D9A5079E29DFC7B9007D4D71 /* GenCodeReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */; };
-		D9A507A029DFD4D3007D4D71 /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */; };
+		D9A5079E29DFC7B9007D4D71 /* ResetPwdBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5079D29DFC7B9007D4D71 /* ResetPwdBody.swift */; };
 		D9A507A429DFD775007D4D71 /* GenCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A329DFD775007D4D71 /* GenCodeViewModel.swift */; };
 		D9A507A629DFD7D0007D4D71 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A529DFD7D0007D4D71 /* CodeView.swift */; };
-		D9A507A829DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */; };
 		D9A507AA29DFD9E1007D4D71 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */; };
 		D9A507AC29DFEF48007D4D71 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A507AB29DFEF48007D4D71 /* ForgetPasswordView.swift */; };
 		D9AE2CAB2A040C10008AFEEC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9AE2CAD2A040C10008AFEEC /* Localizable.strings */; };
 		D9AE2CB02A0411F8008AFEEC /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE2CAF2A0411F8008AFEEC /* LanguageViewController.swift */; };
 		D9B159E22A029087006B2B17 /* ItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B159E12A029087006B2B17 /* ItemCard.swift */; };
 		D9B159E62A029642006B2B17 /* ArticleRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B159E52A029642006B2B17 /* ArticleRepo.swift */; };
+		D9C1B61F2A166C900067DC9E /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1B61E2A166C900067DC9E /* ResetPasswordController.swift */; };
 		D9F45A022A042CC700DEC137 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F45A012A042CC700DEC137 /* AboutViewController.swift */; };
 		D9F45A042A042D1A00DEC137 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F45A032A042D1A00DEC137 /* AboutView.swift */; };
 /* End PBXBuildFile section */
@@ -116,12 +114,9 @@
 		D99D06D529EF5D7D00B738CA /* ArticlesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRepo.swift; sourceTree = "<group>"; };
 		D99D06D729EF686C00B738CA /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		D99D06D929EF850D00B738CA /* ArticlesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListView.swift; sourceTree = "<group>"; };
-		D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPasswordReq.swift; sourceTree = "<group>"; };
-		D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenCodeReq.swift; sourceTree = "<group>"; };
-		D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		D9A5079D29DFC7B9007D4D71 /* ResetPwdBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPwdBody.swift; sourceTree = "<group>"; };
 		D9A507A329DFD775007D4D71 /* GenCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenCodeViewModel.swift; sourceTree = "<group>"; };
 		D9A507A529DFD7D0007D4D71 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
-		D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsecurChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		D9A507AB29DFEF48007D4D71 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 		D9AE2CA52A040B26008AFEEC /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
@@ -131,6 +126,7 @@
 		D9AE2CAF2A0411F8008AFEEC /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		D9B159E12A029087006B2B17 /* ItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCard.swift; sourceTree = "<group>"; };
 		D9B159E52A029642006B2B17 /* ArticleRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRepo.swift; sourceTree = "<group>"; };
+		D9C1B61E2A166C900067DC9E /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
 		D9F45A012A042CC700DEC137 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D9F45A032A042D1A00DEC137 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +188,7 @@
 				D9AE2CAF2A0411F8008AFEEC /* LanguageViewController.swift */,
 				D99D06D929EF850D00B738CA /* ArticlesListView.swift */,
 				D93D53552A0C111E008C6527 /* ArticleDetailsView.swift */,
+				D9C1B61E2A166C900067DC9E /* ResetPasswordController.swift */,
 				D9A507A929DFD9E1007D4D71 /* ChangePasswordView.swift */,
 				59AD496E29C1F562000A6C3C /* ViewController.swift */,
 				D27E036829C3BEFD0000C2BB /* MapViewController.swift */,
@@ -295,9 +292,7 @@
 			children = (
 				D96447C229DE30BC00847733 /* LoginViewModel.swift */,
 				D96447C329DE30BC00847733 /* SignUpViewModel.swift */,
-				D9A5079F29DFD4D3007D4D71 /* ForgetPasswordViewModel.swift */,
 				D9A507A329DFD775007D4D71 /* GenCodeViewModel.swift */,
-				D9A507A729DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift */,
 				D99D06D729EF686C00B738CA /* ArticlesViewModel.swift */,
 				D9B159E52A029642006B2B17 /* ArticleRepo.swift */,
 			);
@@ -312,8 +307,7 @@
 				D96447CF29DE30DC00847733 /* AuthInterceptor.swift */,
 				D96447D029DE30DC00847733 /* LoginModels.swift */,
 				D96447D129DE30DC00847733 /* GenericResponse.swift */,
-				D9A5079B29DFC70F007D4D71 /* forgetPasswordReq.swift */,
-				D9A5079D29DFC7B9007D4D71 /* GenCodeReq.swift */,
+				D9A5079D29DFC7B9007D4D71 /* ResetPwdBody.swift */,
 				D99D06D329EF50AB00B738CA /* Article.swift */,
 			);
 			path = Models;
@@ -441,7 +435,6 @@
 				D96447D529DE30DC00847733 /* LoginModels.swift in Sources */,
 				D96447D429DE30DC00847733 /* AuthInterceptor.swift in Sources */,
 				D9F45A042A042D1A00DEC137 /* AboutView.swift in Sources */,
-				D9A507A829DFD87E007D4D71 /* UnsecurChangePasswordViewModel.swift in Sources */,
 				59AD498229C21BF1000A6C3C /* SignUpController.swift in Sources */,
 				D27E036929C3BEFD0000C2BB /* MapViewController.swift in Sources */,
 				D9A507AA29DFD9E1007D4D71 /* ChangePasswordView.swift in Sources */,
@@ -451,12 +444,12 @@
 				D96447C529DE30BC00847733 /* Enums.swift in Sources */,
 				D9A507AC29DFEF48007D4D71 /* ForgetPasswordView.swift in Sources */,
 				D9413E9429E8C84300E13C4F /* HomeController.swift in Sources */,
+				D9C1B61F2A166C900067DC9E /* ResetPasswordController.swift in Sources */,
 				D99D06D829EF686C00B738CA /* ArticlesViewModel.swift in Sources */,
-				D9A5079E29DFC7B9007D4D71 /* GenCodeReq.swift in Sources */,
+				D9A5079E29DFC7B9007D4D71 /* ResetPwdBody.swift in Sources */,
 				D96447C829DE30BC00847733 /* NetworkManager.swift in Sources */,
 				D96447D829DE61E700847733 /* profileController.swift in Sources */,
 				D93D535A2A0C1227008C6527 /* Chip.swift in Sources */,
-				D9A507A029DFD4D3007D4D71 /* ForgetPasswordViewModel.swift in Sources */,
 				D9413E9629E8D48000E13C4F /* Utils.swift in Sources */,
 				D9AE2CB02A0411F8008AFEEC /* LanguageViewController.swift in Sources */,
 				D9413E7429E8C79900E13C4F /* ContentView.swift in Sources */,
@@ -472,7 +465,6 @@
 				D9413E7329E8C79900E13C4F /* EditFoodView.swift in Sources */,
 				D922CCA229EDF6C800CC66D3 /* Alert.swift in Sources */,
 				D99D06D429EF50AB00B738CA /* Article.swift in Sources */,
-				D9A5079C29DFC70F007D4D71 /* forgetPasswordReq.swift in Sources */,
 				D9B159E22A029087006B2B17 /* ItemCard.swift in Sources */,
 				D96447D229DE30DC00847733 /* SignUpRequest.swift in Sources */,
 				D2C3BC9C29DDC84800D1CD76 /* SettingsController.swift in Sources */,

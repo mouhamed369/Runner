@@ -52,7 +52,8 @@ final class AuthRepo : DataParser {
         }
         
     }
-    static func resetPassRep(resetPassReq : forgetPasswordReq) async ->  GenericResponse?{
+    
+    static func resetPassword(resetPassReq : ResetPwdBody) async ->  GenericResponse?{
         do{
             let headers : HTTPHeaders = [
                 "Content-Type": "application/json",
@@ -71,13 +72,18 @@ final class AuthRepo : DataParser {
         }
         
     }
-    static func verifCode(verifCode: GenCodeRep) async ->  GenericResponse?{
+    static func findEmail(email: String) async ->  GenericResponse?{
         do{
             let headers : HTTPHeaders = [
                 "Content-Type": "application/json",
                 //"Accept": "application/json"
             ]
-            let resp = try await NetworkManager.shared.post(path: "findEmail", parameters: verifCode, headers: headers)
+            
+            let params = [
+                "email": email
+            ]
+            
+            let resp = try await NetworkManager.shared.post(path: "findEmail", parameters: params, headers: headers)
             
             let data: GenericResponse = try self.parseData(from: resp)
             
@@ -90,30 +96,6 @@ final class AuthRepo : DataParser {
         }
         
     }
-    static func unsecurechangepassword(resetPassword: SignUpRequest) async ->  GenericResponse?{
-        do{
-            let headers : HTTPHeaders = [
-                "Content-Type": "application/json",
-                //"Accept": "application/json"
-            ]
-            let resp = try await NetworkManager.shared.post(path: "resetpassword", parameters: resetPassword, headers: headers)
-            
-            let data: GenericResponse = try self.parseData(from: resp)
-            
-            return data
-            
-        }
-        catch let error {
-            print(error.localizedDescription)
-            return nil
-        }
-        
-    }
-    
-    
-    
-    
-    
 }
     
 

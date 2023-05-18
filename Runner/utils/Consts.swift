@@ -9,5 +9,5 @@ import Foundation
 
 class Consts {
 
- static let ENDPOINT = "http://172.17.1.115:3000"
+ static let ENDPOINT = "http://172.17.6.161:3000"
 }

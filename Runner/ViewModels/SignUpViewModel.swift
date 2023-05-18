@@ -23,7 +23,7 @@ extension SignUpController {
                 
                 await MainActor.run {
                     
-                    if (res!.code > 400) {
+                    if (res == nil) {
                         self.response = nil
                         self.internalError = res?.message
                         return

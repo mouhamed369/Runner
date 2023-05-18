@@ -16,9 +16,9 @@ class NotificationController: UIViewController {
     @IBOutlet weak var datapiker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
-        send.text = NSLocalizedString("Send Remember Me", comment: "")
-        remember.text = NSLocalizedString("Remember Me", comment: "")
-        ssend.setTitle(NSLocalizedString("Send", comment: ""), for: .normal)
+        //send.text = NSLocalizedString("Send Remember Me", comment: "")
+        //remember.text = NSLocalizedString("Remember Me", comment: "")
+        //ssend.setTitle(NSLocalizedString("Send", comment: ""), for: .normal)
         //UNUserNotificationCenter.current()
         // Do any additional setup after loading the view.
     }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct GenCodeRep : Codable {
+struct ResetPwdBody : Codable {
     let ActivationCode : String
     let Password : String
 }
