@@ -14,7 +14,7 @@ final class ArticlesRepo: DataParser {
             let data: ArticlePage = try self.parseData(from: resonse)
             return .success(data)
         } catch let error {
-            print(error.localizedDescription)
+       
             return .failure(error)
         }
     }
